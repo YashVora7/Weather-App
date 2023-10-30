@@ -15,8 +15,7 @@ const checkWeather = async (cityname) => {
     else {
 
         var jsonData = await res.json()
-
-        // console.log(jsonData);
+        
 
         document.querySelector(".city").innerHTML = jsonData.name
         document.querySelector(".temp").innerHTML = Math.round(jsonData.main.temp) + ".c"
